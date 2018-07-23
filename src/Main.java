@@ -6,7 +6,7 @@ public class Main {
         Greeting helloWorldGreeting = new HelloWorldGreeting();
 
         //replaces helloWorldGreeting
-        Runnable lambdaGreeting = () -> System.out.println("Hello World!");
+        Runnable lambdaGreeting = () -> System.out.println("Hello World! - lambda");
 
         /*
 
@@ -15,8 +15,17 @@ public class Main {
 
          */
 
-        //these are two ways of doing the same thing
+
+        Greeting innerClassGreeting = new Greeting() {
+
+            public void perform() {
+                System.out.println("Hello World! - inner class");
+            }
+        };
+
+        //these are three ways of doing the same thing
         helloWorldGreeting.perform();
+        innerClassGreeting.perform();
         lambdaGreeting.run();
 
     }
