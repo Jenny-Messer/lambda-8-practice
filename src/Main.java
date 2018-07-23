@@ -13,6 +13,9 @@ public class Main {
         Runnable is a functional interface built into java 8
         Runnable takes no args and returns nothing, it just runs what it is given
 
+        functional interfaces must have only 1 abstract method to be usable by lambdas
+        the annotation @FunctionalInterface denotes an interface that must not have more methods added to it
+
          */
 
 
