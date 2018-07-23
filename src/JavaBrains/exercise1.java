@@ -1,4 +1,4 @@
-// Copyright (c) 2018 Travelex Ltd
+package JavaBrains;// Copyright (c) 2018 Travelex Ltd
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -50,7 +50,7 @@ public class exercise1 {
     }
 
     /*
-    Predicate<Person> is a lambda that takes 1 argument of type Person
+    Predicate<JavaBrains.Person> is a lambda that takes 1 argument of type JavaBrains.Person
     and has the method test() which returns a boolean
     */
     private static void printConditionally(List<Person> people, Predicate<Person> condition){

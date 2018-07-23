@@ -1,4 +1,4 @@
-// Copyright (c) 2018 Travelex Ltd
+package JavaBrains;// Copyright (c) 2018 Travelex Ltd
 
 public class Person {
 
@@ -15,7 +15,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+        return "JavaBrains.Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
     }
 
     public String getFirstName() {
