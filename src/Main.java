@@ -28,5 +28,8 @@ public class Main {
         innerClassGreeting.perform();
         lambdaGreeting.run();
 
+        //using greeter to run also works
+        greeter.greet(innerClassGreeting);
+
     }
 }
