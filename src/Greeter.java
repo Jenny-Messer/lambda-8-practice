@@ -2,8 +2,8 @@
 
 public class Greeter {
 
-    public void greet() {
-        System.out.println("Hello World!");
+    public void greet(Greeting greeting) {
+        greeting.perform();
     }
 
 }

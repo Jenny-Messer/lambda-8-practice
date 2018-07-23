@@ -2,6 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
         Greeter greeter = new Greeter();
-        greeter.greet();
+        HelloWorldGreeting helloWorldGreeting = new HelloWorldGreeting();
+
+        //greeter performs an action, helloworldgreeting is an object that holds that action
+        greeter.greet(helloWorldGreeting);
     }
 }
