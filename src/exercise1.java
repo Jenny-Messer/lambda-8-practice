@@ -18,7 +18,8 @@ public class exercise1 {
                 new Person("Matthew", "Arnold", 39)
         );
 
-        //TODO sort list by last name
+        //sort list by last name
+
         //non lambda
         Collections.sort(people, new Comparator<Person>() {
 
@@ -31,7 +32,8 @@ public class exercise1 {
         //lambda version
         Collections.sort(people, (p1, p2) -> p1.getLastName().compareTo(p2.getLastName()));
 
-        //TODO print
+        //print
+
         //non lambda
         for (Person p : people){
             System.out.println(p);
@@ -40,14 +42,17 @@ public class exercise1 {
         //lambda
         printConditionally(people, p -> true);
 
-        //TODO create method that prints all people that have last name beginning with C
+        //create method that prints all people that have last name beginning with C
+
         printConditionally(people, p -> p.getFirstName().startsWith("C"));
 
 
     }
 
-    //Predicate<Person> is a lambda that takes 1 argument of type Person
-    //and has the method test() which returns a boolean
+    /*
+    Predicate<Person> is a lambda that takes 1 argument of type Person
+    and has the method test() which returns a boolean
+    */
     private static void printConditionally(List<Person> people, Predicate<Person> condition){
         for (Person p : people) {
             if (condition.test(p)) {
