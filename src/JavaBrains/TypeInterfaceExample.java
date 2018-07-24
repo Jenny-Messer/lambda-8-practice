@@ -5,7 +5,7 @@ public interface TypeInterfaceExample {
     static void main(String[] args) {
 
         //the type of myLambda is determined by the return type of StringLengthLambda.getLength
-        StringLengthLambda myLambda = s -> s.length();
+        StringLengthLambda myLambda = s -> s.length(); //using method reference   myLambda = String::length;
 
         printLambda(myLambda);
 
